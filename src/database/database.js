@@ -6,7 +6,6 @@ const {Pool} = pg
 
 const configDataBase = {
     connectionString: process.env.DATABASE_URL,
-    //ssl:false,
 }
 
 if(process.env.NODE_ENV === 'production') configDataBase.ssl = true;
